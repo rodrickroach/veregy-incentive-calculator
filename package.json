@@ -1,7 +1,7 @@
 {
-  "name": "veregy-incentive-dashboard",
+  "name": "veregy-incentive-dashboard-v3",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,7 +13,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "vite": "^5.0.0",
-    "@vitejs/plugin-react": "^4.0.0"
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.4.10"
   }
 }
