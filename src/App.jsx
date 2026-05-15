@@ -334,6 +334,7 @@ export default function App() {
                     <div>
                       <div className="rowTitle">{p.label}</div>
                       <div className="rowSub">{p.quarter}, {p.pct}%</div>
+                      <div className="rowAmt">{money(p.amount)}</div>
                     </div>
                     <div className="rowAmt">{money(p.amount)}</div>
                   </div>
