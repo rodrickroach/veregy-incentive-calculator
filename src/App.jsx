@@ -140,6 +140,17 @@ export default function App() {
       }
     }
 
+    const monthRows = Object.entries(out.monthMap)
+  .map(([label, amount]) => ({ label, amount }))
+  .sort((a, b) => {
+    const [am, ay] = a.label.split(" ");
+    const [bm, by] = b.label.split(" ");
+
+    const ai = MONTHS.indexOf(am);
+    const bi = MONTHS.indexOf(bm);
+
+    return (Number(ay) * 12 + ai) - (Number(by) * 12 + bi);
+  });
     const quarterRows = Object.entries(out.quarterMap)
       .map(([label, amount]) => ({ label, amount }))
       .sort((a, b) => {
