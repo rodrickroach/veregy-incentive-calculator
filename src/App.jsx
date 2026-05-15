@@ -159,7 +159,7 @@ export default function App() {
         return (Number(ay) * 10 + Number(aq.replace("Q", ""))) - (Number(by) * 10 + Number(bq.replace("Q", "")));
       });
 
-    return { ...out, quarterRows };
+    return { ...out, monthRows, quarterRows };
   }, [savedDeals]);
 
   function update(name, value) {
