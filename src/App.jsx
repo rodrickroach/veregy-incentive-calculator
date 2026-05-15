@@ -371,6 +371,19 @@ export default function App() {
               </div>
 
               <div className="card">
+                <div className="card">
+  <h2>Payout Month Totals</h2>
+  <div className="list">
+    {totals.monthRows.length === 0 ? (
+      <div className="empty">No saved pipeline deals yet.</div>
+    ) : totals.monthRows.map(m => (
+      <div className="listRow" key={m.label}>
+        <div className="rowTitle">{m.label}</div>
+        <div className="rowAmt">{money(m.amount)}</div>
+      </div>
+    ))}
+  </div>
+</div>
                 <h2>Saved Pipeline</h2>
                 {savedDeals.length === 0 ? (
                   <div className="empty">No deals saved yet.</div>
