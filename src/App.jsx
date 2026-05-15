@@ -126,6 +126,7 @@ export default function App() {
       pipelineAmount: 0,
       totalIncentive: 0,
       likelyNow: 0,
+      monthMap: {},
       quarterMap: {},
     };
 
