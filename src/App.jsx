@@ -135,6 +135,7 @@ export default function App() {
       out.totalIncentive += deal.yourIncentive || 0;
       if (["Proposal", "Closing", "Won"].includes(deal.stage)) out.likelyNow += deal.yourIncentive || 0;
       for (const p of deal.payouts || []) {
+        out.monthMap[p.label] = (out.monthMap[p.label] || 0) + p.amount;
         out.quarterMap[p.quarter] = (out.quarterMap[p.quarter] || 0) + p.amount;
       }
     }
